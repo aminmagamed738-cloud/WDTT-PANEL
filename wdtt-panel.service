@@ -1,0 +1,18 @@
+[Unit]
+Description=WDTT Panel - VK Tunnel Management
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/wdtt-panel
+EnvironmentFile=/opt/wdtt-panel/.env
+ExecStart=/usr/bin/node --enable-source-maps index.mjs
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=wdtt-panel
+
+[Install]
+WantedBy=multi-user.target
