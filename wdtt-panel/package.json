@@ -1,9 +1,0 @@
-{
-  "name": "wdtt-panel",
-  "version": "1.0.0",
-  "description": "WDTT Panel — VK Tunnel Management",
-  "type": "module",
-  "engines": {
-    "node": ">=20.0.0"
-  }
-}
